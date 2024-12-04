@@ -5,7 +5,9 @@ phases:
     commands:
       # Install Python and dependencies
       #- pip install --upgrade pip
-      - pip install -r cdk-dir/requirements.txt
+      - cd cdk-dir
+
+      - pip install -r requirements.txt
 
       # Install AWS CDK CLI
       - npm install -g aws-cdk
