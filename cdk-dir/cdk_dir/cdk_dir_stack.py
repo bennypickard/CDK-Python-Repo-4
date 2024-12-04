@@ -25,7 +25,4 @@ class CdkDirStack(Stack):
                      vpc=vpc)
 
         # example resource
-        queue = sqs.Queue(
-            self, "CdkDirQueue",
-            visibility_timeout=sqs.Duration.seconds(300),
-        )
+        queue = sqs.Queue(self, "CdkDirQueue")
