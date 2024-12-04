@@ -1,5 +1,12 @@
 #!/bin/bash
 
+
+echo "Building stuff"
+
+cdk synth
+
+
+
 # Check git status
 echo "Checking git status..."
 git status
