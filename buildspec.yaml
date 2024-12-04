@@ -1,5 +1,16 @@
 version: 0.2
 
+env:
+  variables:
+    AWS_DEFAULT_REGION: "us-west-2"  # or your preferred region
+
+cache:
+  paths:
+    # Cache pip dependencies
+    - '/root/.cache/pip/**/*'  # Adjust if you have a custom location for pip cache
+    # Cache node_modules
+    - 'node_modules/**/*'  # Adjust if you have a custom location for npm cache
+
 phases:
   install:
     commands:
